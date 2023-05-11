@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('cliente', function (Blueprint $table) {
             $table->id();
-            $table->varchar('apellidos', 100);
-            $table->varchar('nombre', 100);
-            $table->varchar('documento', 100);
-            $table->varchar('direccion', 100);
-            $table->varchar('telefono', 100);
-            $table->varchar('email', 100);
+            $table->string('apellidos', 100);
+            $table->string('nombre', 100);
+            $table->string('documento', 100);
+            $table->string('direccion', 100);
+            $table->string('telefono', 100);
+            $table->string('email', 100);
             $table->timestamps();
         });
     }

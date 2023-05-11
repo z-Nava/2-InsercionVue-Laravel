@@ -6,6 +6,7 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+import App from "../src/App.vue";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -17,6 +18,8 @@ const app = createApp({});
 
 import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
+
+createApp(App).mount('#app');
 
 /**
  * The following block of code may be used to automatically register your

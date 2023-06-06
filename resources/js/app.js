@@ -7,6 +7,10 @@
 import './bootstrap';
 import { createApp } from 'vue';
 import App from "../src/App.vue";
+import ExampleComponent from './components/ExampleComponent.vue';
+import ClienteForm from './components/ClienteForm.vue';
+
+
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -14,12 +18,14 @@ import App from "../src/App.vue";
  * to use in your application's views. An example is included for you.
  */
 
-const app = createApp({});
-
-import ExampleComponent from './components/ExampleComponent.vue';
+const app = createApp(App);
 app.component('example-component', ExampleComponent);
+app.component('cliente-form', ClienteForm);
+app.mount('#app');
 
-createApp(App).mount('#app');
+
+
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -39,4 +45,4 @@ createApp(App).mount('#app');
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+
